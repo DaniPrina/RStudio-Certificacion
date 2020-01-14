@@ -18,25 +18,12 @@ view(nobel_winners2)
 # femenino en los premios nobel. ¿Cuántas mujeres ganaron el nobel?
 # ¿Cuántos hombres? ¿Cuántas organizaciones?
 
-# Para responder, miremos las columnas de la base de datos
-# y pensemos: ¿cuál es nuestra variable de interés?
-
 # Quiero lograr un gráfico de barras que haga un conteo de la 
 # cantidad de mujeres, hombres y organizaciones que ganaron
 # premios nobel. Vamos a trabajar, entonces, con la variable "gender".
 
 # Por dónde arrancamos? 
-# Repasemos. Llamemos a ggplot:
-
-ggplot()
-
-# Qué veo luego de ejecutar el código?
-# Es mi primera capa, genero un eje de coordenadas. Sigue 
-# especificar con qué datos quiero trabajar:
-
-ggplot(data = nobel_winners2)
-
-# Cambió algo? Especifiquemos el geom con el aes:
+# Repasemos:
 
 ggplot(data = nobel_winners2) +
   geom_bar(mapping = aes(x = gender))
@@ -80,7 +67,8 @@ ggplot(data = nobel_winners2) +
 # Así vemos seis gráficos, uno para cada categoría, mostrando
 # la cantidad de premios por género u organización.
 # Acá podemos ver que en economía, física y química es donde menos
-# cantidad de mujeres hay.
+# cantidad de mujeres hay y que solo hay organizaciones en nobel
+# de la paz.
 
 # En suma, repasemos para incorporar lo aprendido: 
 
