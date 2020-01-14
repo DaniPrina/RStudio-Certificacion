@@ -12,7 +12,7 @@ nobel_winners2 <- readr::read_csv("https://raw.githubusercontent.com/DaniPrina/R
 
 #Podemos hechar un vistazo para recordarla.
 
-view(nobel_winners2)
+View(nobel_winners2)
 
 # Propongo realizar un análisis exploratorio visual sobre el cupo
 # femenino en los premios nobel. ¿Cuántas mujeres ganaron el nobel?
@@ -37,7 +37,7 @@ ggplot(data = nobel_winners2) +
 # Ups! "color" solo me colorea los bordes. Probemos con fill (relleno):
 
 ggplot(data = nobel_winners2) +
-  geom_bar(mapping = aes(x = gender, fill = gender) )
+  geom_bar(mapping = aes(x = gender, fill = gender))
 
 # Notaron que el argumento "fill" va dentro del aes( )? ¿Qué
 # pasa si lo pongo afuera? En otra ocasión, pueden probar con
